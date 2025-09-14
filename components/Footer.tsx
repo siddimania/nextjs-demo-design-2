@@ -91,7 +91,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold text-gray-900">strapi</span>
             </div>
-            <p className="text-sm leading-relaxed text-gray-600">
+            <p className="text-sm text-gray-600">
               Strapi is the leading open-source Headless CMS. Strapi gives
               developers the freedom to use their favorite tools and frameworks
               while allowing editors to easily manage their content and
@@ -109,7 +109,7 @@ const Footer = () => {
           <div className="grid flex-1 grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {footerSections.map((section, index) => (
               <div key={section.title}>
-                <h3 className="mb-4 text-sm font-semibold tracking-wide text-gray-900 uppercase">
+                <h3 className="mb-4 text-sm font-semibold text-gray-900 uppercase">
                   {section.title}
                 </h3>
                 <ul className="space-y-1">
@@ -132,7 +132,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-12 border-t border-gray-200 pt-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-            <div className="mb-4 flex flex-wrap items-center space-x-6 md:mb-0">
+            <div className="mb-4 flex flex-wrap items-center space-x-3 md:mb-0">
               <a
                 href="#"
                 className="text-sm text-gray-600 transition-colors hover:text-indigo-600"
@@ -154,7 +154,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-sm text-gray-500">
-                © 2024 Strapi Solutions SAS. All rights reserved.
+                © 2025 Strapi SAAS. All rights reserved.
               </span>
             </div>
           </div>

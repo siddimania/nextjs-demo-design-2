@@ -6,9 +6,10 @@
 @theme inline {
   /* app custom settings */
   --font-poppins: var(--font-poppins);
-  --font-source_code_pro: var(--source_code_pro);
+  --font-source_code_pro: var(--font-source_code_pro);
   --color-brand-background-blue: var(--brand-background-blue);
   --color-brand-button-blue: var(--brand-button-blue);
+  --color-brand-heading: var(--brand-heading);
 
   /* shadcn custom settings */
   --color-background: var(--background);
@@ -54,6 +55,7 @@
   /* app custom colors */
   --brand-background-blue: oklch(0.2161 0.0273 283.88);
   --brand-button-blue: oklch(0.5302 0.2628 273.7);
+  --brand-heading: oklch(0.3305 0.1282 277.34);
 
   /* shadcn custom settings */
   --radius: 0.625rem;
@@ -94,6 +96,7 @@
   /* app custom colors */
   --brand-background-blue: oklch(0.2161 0.0273 283.88);
   --brand-button-blue: oklch(0.5302 0.2628 273.7);
+  --brand-heading: oklch(0.3305 0.1282 277.34);
 
   /* shadcn custom settings */
   --background: oklch(0.145 0 0);

@@ -38,14 +38,14 @@ const ReviewsSection = () => {
   ];
 
   return (
-    <section className="flex items-center justify-center py-20 bg-white px-4 md:px-6">
+    <section className="flex items-center justify-center py-15 bg-white px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="text-purple-500 text-sm font-semibold tracking-wider uppercase mb-4">
+          <div className="text-purple-500 font-semibold text-sm uppercase tracking-wide">
             REVIEWS
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-800">
+          <h2 className="text-4xl md:text-4xl font-bold text-brand-heading mt-5">
             Developers love Strapi
           </h2>
         </div>

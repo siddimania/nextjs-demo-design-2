@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex bg-brand-background-blue relative min-h-screen overflow-hidden justify-center"
+      className="flex bg-brand-background-blue relative pb-10 overflow-hidden justify-center"
     >
       <div className="px-4 md:px-6 max-w-[1400px]">
         {/* Background Grid Pattern */}
@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="absolute right-1/4 bottom-1/4 h-6 w-6 rotate-45 rounded-lg bg-purple-500/20"></div>
 
         {/* Announcement Banner */}
-        <div className="relative z-10 pt-20">
+        <div className="relative z-10 pt-15">
           <div className="flex justify-center">
             <div className="inline-flex items-center gap-3 rounded-md border border-gray-500/30 px-6 py-3 text-sm backdrop-blur-sm font-poppins">
               <span className="rounded bg-purple-500 px-2 py-0.5 text-xs font-semibold tracking-wide text-white uppercase">
@@ -56,25 +56,25 @@ const Hero = () => {
         </div>
 
         {/* Main Content */}
-        <div className="relative z-10 flex mt-20 flex-col items-center justify-center px-4 text-center">
-          <div className="mx-auto max-w-5xl space-y-8">
+        <div className="relative z-10 flex mt-10 flex-col items-center justify-center px-4 text-center">
+          <div className="mx-auto max-w-5xl">
             {/* Main Heading */}
-            <h1 className="text-4xl leading-tight font-bold text-white md:text-5xl lg:text-5xl font-poppins">
+            <h1 className="text-4xl leading-tight font-bold text-white md:text-5xl font-poppins">
               Build modern websites with the <br/> most customizable Headless CMS
             </h1>
 
             {/* Subheading */}
-            <p className="mx-auto max-w-4xl font-semibold text-gray-400 text-sm md:text-md lg:text-lg font-poppins">
+            <p className="mx-auto max-w-4xl mt-5 font-semibold text-gray-400 text-sm md:text-md lg:text-lg font-poppins">
               The open-source Headless CMS for developers that makes API
               creation easy, and supports your favorite frameworks. Customize
               and host your projects in the cloud or on your own servers.
             </p>
 
             {/* Command Line */}
-            <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <div className="flex min-w-0 items-center rounded-lg border border-slate-600/50 bg-slate-800/80 px-6 py-2 text-lg text-gray-200 backdrop-blur-sm">
                 <span className="mr-2 text-purple-400 font-source_code_pro">$</span>
-                <span className="flex-1 font-source_code_pro font-medium">npx create-strapi-app@latest</span>
+                <span className="flex-1 font-medium font-source_code_pro">npx create-strapi-app@latest</span>
                 <button
                   onClick={handleCopy}
                   className="group ml-4 rounded-md p-2 transition-colors duration-200 hover:bg-slate-700/50"
@@ -90,7 +90,7 @@ const Hero = () => {
             </div>
 
             {/* Divider */}
-            <div className="my-8 flex items-center justify-center">
+            <div className="my-4 flex items-center justify-center">
               <div className="h-px max-w-xs flex-1 bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
               <span className="mx-4 text-base font-semibold tracking-wide text-gray-500 uppercase font-poppins">
                 OR
@@ -100,13 +100,13 @@ const Hero = () => {
 
             {/* CTA Button */}
             <div>
-              <button className="bg-brand-button-blue text-md min-w-3xs transform rounded-lg px-10 py-3 font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-purple-500/25">
+              <button className="bg-brand-button-blue text-md min-w-3xs transform rounded-lg px-10 py-2 font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-blue-500/25">
                 Start your demo
               </button>
             </div>
 
             {/* Features */}
-            <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm font-semibold font-poppins">
+            <div className="mt-15 flex flex-wrap items-center justify-center gap-8 text-sm font-semibold font-poppins">
               <div className="flex items-center gap-2 text-gray-300">
                 <Check className="h-5 w-5 text-green-400" />
                 <span>Open source (MIT)</span>

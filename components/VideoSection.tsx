@@ -12,14 +12,22 @@ import Image from "next/image";
 
 export default function VideoSection() {
   const companies = [
-    { name: "Orion Health", icon: Star },
-    { name: "Toyota", icon: Car },
-    { name: "Engie", icon: Zap },
-    { name: "Walmart", icon: ShoppingCart },
-    { name: "Delivery Hero", icon: Truck },
-    { name: "NASA", icon: Rocket },
-    { name: "Société Générale", icon: Users },
-    { name: "Accenture", icon: Briefcase },
+    {
+      name: "Orion Health",
+      icon: "/video/orion_health_logo.svg",
+      type: "image",
+    },
+    { name: "Toyota", icon: "/video/toyota.svg", type: "image" },
+    { name: "Engie", icon: "/video/Logo_engie.svg", type: "image" },
+    { name: "Walmart", icon: "/video/walmart.svg", type: "image" },
+    { name: "Delivery Hero", icon: "/video/Delivery.svg", type: "image" },
+    { name: "NASA", icon: "/video/NASA_NB.svg", type: "image" },
+    {
+      name: "Société Générale",
+      icon: "/video/societe_generale.svg",
+      type: "image",
+    },
+    { name: "Accenture", icon: "/video/Accenture.svg", type: "image" },
   ];
 
   return (
@@ -33,27 +41,29 @@ export default function VideoSection() {
           <Image
             src="/hero/hero-susection-image.png"
             alt="Hero Subsection Image"
-            width={800}
-            height={700}
-            className="rounded-4xl ring-2 ring-gray-600"
+            width={950}
+            height={800}
+            className="rounded-sm ring-2 ring-gray-600/40"
           />
         </div>
 
         {/* Company Logos Section */}
-        <div className="py-12">
+        <div className="pt-5 pb-25">
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-4 lg:grid-cols-8">
               {companies.map((company, index) => {
-                const IconComponent = company.icon;
                 return (
                   <div
                     key={index}
-                    className="flex flex-col items-center justify-center opacity-60 transition-opacity duration-300 hover:opacity-100"
+                    className="flex flex-col items-center justify-center"
                   >
-                    <IconComponent className="mb-2 h-8 w-8 text-gray-400" />
-                    <span className="text-center text-xs font-medium text-gray-400">
-                      {company.name}
-                    </span>
+                    <Image
+                      src={company.icon as string}
+                      alt={company.name}
+                      width={32}
+                      height={32}
+                      className="mb-2 h-20 w-20 text-white"
+                    />
                   </div>
                 );
               })}
