@@ -1,4 +1,5 @@
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const ReviewsSection = () => {
   const reviews = [
@@ -6,56 +7,59 @@ const ReviewsSection = () => {
       id: 1,
       company: "Vercel",
       logo: "▲", // Triangle symbol as placeholder for Vercel logo
-      review: "Strapi and Next.js both build on the same philosophy: open source is the path to success. Combine them with Vercel deployment and you have a stack with virtually infinite scalability, global performance, and security.",
+      review:
+        "Strapi and Next.js both build on the same philosophy: open source is the path to success. Combine them with Vercel deployment and you have a stack with virtually infinite scalability, global performance, and security.",
       author: {
         name: "Guillermo Rauch",
         title: "CEO",
-        avatar: "GR"
-      }
+        avatar: "/review/tennis_1.png",
+      },
     },
     {
       id: 2,
       company: "TESCO",
       logo: "TESCO", // Text placeholder for Tesco logo
-      review: "With Strapi, we can be sure that the solution can be customized to always fit our needs. It helped us reduce time-to-market and deliver the project on time.",
+      review:
+        "With Strapi, we can be sure that the solution can be customized to always fit our needs. It helped us reduce time-to-market and deliver the project on time.",
       author: {
         name: "Michał Pawłowski",
         title: "Head of Software Development",
-        avatar: "MP"
-      }
+        avatar: "/review/birthday.png",
+      },
     },
     {
       id: 3,
       company: "SOCIETE GENERALE",
       logo: "SG", // Placeholder for Societe Generale logo
-      review: "Strapi has turned out to be a great choice so far: technical setup was really quick, and in a few days we were able to have a drafted site up & running, leveraging Strapi main functionalities.",
+      review:
+        "Strapi has turned out to be a great choice so far: technical setup was really quick, and in a few days we were able to have a drafted site up & running, leveraging Strapi main functionalities.",
       author: {
         name: "Jérôme Chauveau",
         title: "DevOps Team Lead",
-        avatar: "JC"
-      }
-    }
+        avatar: "/review/aries.png",
+      },
+    },
   ];
 
   return (
-    <section className="flex items-center justify-center py-15 bg-white px-4 md:px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="flex items-center justify-center bg-white px-4 py-15 md:px-6">
+      <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="text-purple-500 font-semibold text-sm uppercase tracking-wide">
+        <div className="mb-16 text-center">
+          <div className="text-sm font-semibold tracking-wide text-purple-500 uppercase">
             REVIEWS
           </div>
-          <h2 className="text-4xl md:text-4xl font-bold text-brand-heading mt-5">
+          <h2 className="text-brand-heading mt-5 text-4xl font-bold md:text-4xl">
             Developers love Strapi
           </h2>
         </div>
 
         {/* Reviews Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+              className="flex flex-col cursor-pointer rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg justify-between"
             >
               {/* Company Logo */}
               <div className="mb-6">
@@ -67,31 +71,39 @@ const ReviewsSection = () => {
                 )}
                 {review.company === "SOCIETE GENERALE" && (
                   <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-red-600 flex items-center justify-center text-white font-bold text-sm">
+                    <div className="flex h-8 w-8 items-center justify-center bg-red-600 text-sm font-bold text-white">
                       SG
                     </div>
                     <div className="text-lg font-bold text-black">
-                      SOCIETE<br />GENERALE
+                      SOCIETE
+                      <br />
+                      GENERALE
                     </div>
                   </div>
                 )}
               </div>
 
               {/* Review Text */}
-              <p className="text-gray-600 leading-relaxed mb-6 text-base">
+              <p className="mb-6 text-base leading-relaxed text-gray-600">
                 {review.review}
               </p>
 
               {/* Author */}
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold text-sm">
-                  {review.author.avatar}
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-sm font-semibold text-white">
+                  <Image
+                    src={review.author.avatar}
+                    alt="author_image"
+                    loading="lazy"
+                    width={48}
+                    height={48}
+                  />
                 </div>
                 <div>
-                  <div className="font-semibold text-blue-600 text-sm">
+                  <div className="text-sm font-semibold text-blue-600">
                     {review.author.name}
                   </div>
-                  <div className="text-gray-500 text-sm">
+                  <div className="text-sm text-gray-500">
                     {review.author.title}
                   </div>
                 </div>

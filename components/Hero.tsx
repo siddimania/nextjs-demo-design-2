@@ -48,8 +48,8 @@ const Hero = () => {
               <span className="text-white font-semibold">
                 Check out everything Strapi launched at StrapiConf.
               </span>
-              <button className="text-purple-300 font-semibold transition-colors duration-200 hover:text-purple-200">
-                Watch the keynote →
+              <button className="text-purple-500 font-semibold">
+                Watch keynote →
               </button>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Hero = () => {
             </h1>
 
             {/* Subheading */}
-            <p className="mx-auto max-w-4xl mt-5 font-semibold text-gray-400 text-sm md:text-md lg:text-lg font-poppins">
+            <p className="mx-auto max-w-4xl mt-8 font-semibold text-gray-400 text-sm md:text-md lg:text-base font-poppins">
               The open-source Headless CMS for developers that makes API
               creation easy, and supports your favorite frameworks. Customize
               and host your projects in the cloud or on your own servers.
@@ -73,8 +73,8 @@ const Hero = () => {
             {/* Command Line */}
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <div className="flex min-w-0 items-center rounded-lg border border-slate-600/50 bg-slate-800/80 px-6 py-2 text-lg text-gray-200 backdrop-blur-sm">
-                <span className="mr-2 text-purple-400 font-source_code_pro">$</span>
-                <span className="flex-1 font-medium font-source_code_pro">npx create-strapi-app@latest</span>
+                <span className="mr-2 text-purple-400 font-cascadia_code">$</span>
+                <span className="flex-1 font-medium font-cascadia_code">npx create-strapi-app@latest</span>
                 <button
                   onClick={handleCopy}
                   className="group ml-4 rounded-md p-2 transition-colors duration-200 hover:bg-slate-700/50"

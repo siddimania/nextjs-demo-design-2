@@ -7,6 +7,8 @@
   /* app custom settings */
   --font-poppins: var(--font-poppins);
   --font-source_code_pro: var(--font-source_code_pro);
+  --font-cascadia_code: var(--font-cascadia_code);
+  
   --color-brand-background-blue: var(--brand-background-blue);
   --color-brand-button-blue: var(--brand-button-blue);
   --color-brand-heading: var(--brand-heading);

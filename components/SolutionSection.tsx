@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SolutionSection = () => {
   return (
-    <section className="relative flex items-center justify-center bg-gradient-to-t from-purple-100 via-white to-white px-4 py-20 md:px-6">
+    <section className="relative flex items-center justify-center bg-gradient-to-t from-indigo-50 via-white to-white px-4 py-20 md:px-6">
       <div className="grid w-full max-w-6xl items-center gap-12 lg:grid-cols-2">
         {/* Content Side */}
         <div className="space-y-8">

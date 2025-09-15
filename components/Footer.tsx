@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const footerSections = [
@@ -91,7 +92,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold text-gray-900">strapi</span>
             </div>
-            <p className="text-sm text-gray-600">
+            <p className="text-xs text-gray-600">
               Strapi is the leading open-source Headless CMS. Strapi gives
               developers the freedom to use their favorite tools and frameworks
               while allowing editors to easily manage their content and
@@ -99,9 +100,12 @@ const Footer = () => {
             </p>
             {/* Placeholder for additional image */}
             <div className="mt-6">
-              <div className="flex h-12 w-20 items-center justify-center rounded border-2 border-dashed border-gray-300 bg-gray-200">
-                <span className="text-xs text-gray-500">Soc 2</span>
-              </div>
+              <Image
+                src="/footer/soc.png"
+                alt="author_image"
+                width={52}
+                height={52}
+              />
             </div>
           </div>
 
@@ -117,7 +121,7 @@ const Footer = () => {
                     <li key={linkIndex}>
                       <a
                         href="#"
-                        className="text-sm text-gray-600 transition-colors duration-200 hover:text-indigo-600"
+                        className="text-xs font-medium text-gray-600 transition-colors duration-200 hover:text-indigo-600"
                       >
                         {link}
                       </a>
