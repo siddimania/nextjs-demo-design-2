@@ -5,9 +5,10 @@
 
 @theme inline {
   /* app custom settings */
+  --font-display: var(--font-poppins), sans-serif; 
   --font-poppins: var(--font-poppins);
   --font-source_code_pro: var(--font-source_code_pro);
-  --font-cascadia_code: var(--font-cascadia_code);
+  --font-cascadia_code: var(--font-cascadia_code), sans-serif;
   
   --color-brand-background-blue: var(--brand-background-blue);
   --color-brand-button-blue: var(--brand-button-blue);

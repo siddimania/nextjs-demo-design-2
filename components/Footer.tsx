@@ -2,7 +2,7 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
-const Footer = () => {
+export default function Footer() {
   const footerSections = [
     {
       title: "PRODUCT",
@@ -87,9 +87,13 @@ const Footer = () => {
           <div className="lg:w-80 lg:flex-shrink-0">
             <div className="mb-4 flex items-center space-x-2">
               {/* Placeholder for Strapi logo */}
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-indigo-600">
-                <div className="h-4 w-4 rounded-sm bg-white"></div>
-              </div>
+              <Image
+                src="/brand/brand_logo.png"
+                alt="brand_logo"
+                width={32}
+                height={32}
+                className="h-8 w-8"
+              />
               <span className="text-xl font-bold text-gray-900">strapi</span>
             </div>
             <p className="text-xs text-gray-600">
@@ -113,7 +117,7 @@ const Footer = () => {
           <div className="grid flex-1 grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {footerSections.map((section, index) => (
               <div key={section.title}>
-                <h3 className="mb-4 text-sm font-semibold text-gray-900 uppercase">
+                <h3 className="mb-4 text-sm font-normal text-gray-900 uppercase">
                   {section.title}
                 </h3>
                 <ul className="space-y-1">
@@ -121,7 +125,7 @@ const Footer = () => {
                     <li key={linkIndex}>
                       <a
                         href="#"
-                        className="text-xs font-medium text-gray-600 transition-colors duration-200 hover:text-indigo-600"
+                        className="text-xs font-normal text-gray-600 transition-colors duration-200 hover:text-indigo-600"
                       >
                         {link}
                       </a>
@@ -139,25 +143,25 @@ const Footer = () => {
             <div className="mb-4 flex flex-wrap items-center space-x-3 md:mb-0">
               <a
                 href="#"
-                className="text-sm text-gray-600 transition-colors hover:text-indigo-600"
+                className="text-xs text-gray-600 transition-colors hover:text-indigo-600"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-sm text-gray-600 transition-colors hover:text-indigo-600"
+                className="text-xs text-gray-600 transition-colors hover:text-indigo-600"
               >
                 Terms of Service
               </a>
               <a
                 href="#"
-                className="text-sm text-gray-600 transition-colors hover:text-indigo-600"
+                className="text-xs text-gray-600 transition-colors hover:text-indigo-600"
               >
                 Cookie Policy
               </a>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="text-sm text-gray-500">
+              <span className="text-xs text-gray-500">
                 © 2025 Strapi SAAS. All rights reserved.
               </span>
             </div>
@@ -166,6 +170,4 @@ const Footer = () => {
       </div>
     </section>
   );
-};
-
-export default Footer;
+}

@@ -35,9 +35,9 @@ export default function VideoSection() {
       id="video"
       className="bg-brand-background-blue flex justify-center"
     >
-      <div className="w-full max-w-[1400px] px-4 md:px-6">
+      <div className="w-full max-w-[1400px] px-4 sm:px-4 md:px-6 lg:px-8">
         {/* Hero Image Placeholder Section */}
-        <div className="flex items-center justify-center py-20">
+        <div className="flex items-center justify-center py-8 md:py-20">
           <Image
             src="/hero/hero-susection-image.png"
             alt="Hero Subsection Image"
@@ -48,9 +48,9 @@ export default function VideoSection() {
         </div>
 
         {/* Company Logos Section */}
-        <div className="pt-5 pb-25">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-4 lg:grid-cols-8">
+        <div className="pt-5 pb-15 md:pb-25">
+          <div className="mx-auto max-w-7xl px-4 sm:px-4 md:px-6 lg:px-8">
+            <div className="grid grid-cols-2 items-center gap-4 md:gap-8 md:grid-cols-4 lg:grid-cols-8">
               {companies.map((company, index) => {
                 return (
                   <div
@@ -62,7 +62,7 @@ export default function VideoSection() {
                       alt={company.name}
                       width={32}
                       height={32}
-                      className="mb-2 h-20 w-20 text-white"
+                      className="h-20 w-20"
                     />
                   </div>
                 );

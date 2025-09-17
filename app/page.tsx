@@ -1,12 +1,11 @@
-import Hero from "@/components/Hero";
-import VideoSection from "@/components/VideoSection";
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import ReviewsSection from "@/components/ReviewSection";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import VideoSection from "@/components/video-section";
+import ProblemSection from "@/components/problem-section";
+import SolutionSection from "@/components/solution-section";
+import FeaturesSection from "@/components/feature-section";
+import ReviewsSection from "@/components/review-section";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (

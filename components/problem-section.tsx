@@ -2,18 +2,18 @@ import { Code, Puzzle, Users } from 'lucide-react';
 
 export default function ProblemSection() {
   return (
-    <section className="bg-gray-50 py-30 px-4 md:px-6">
+    <section className="bg-gray-50 py-10 md:py-20 lg:py-20 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col text-center mb-16 gap-4">
-          <p className="text-purple-500 font-semibold text-sm uppercase tracking-wide">
+        <div className="flex flex-col text-center mb-8 md:mb-16 gap-4">
+          <p className="text-purple-600 font-semibold text-sm md:text-base uppercase tracking-wide">
             THE PROBLEM
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-heading leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-heading leading-tight">
             Building your website the<br />
             way you want is hard
           </h1>
-          <p className="text-gray-500 text-base font-semibold max-w-2xl mx-auto">
+          <p className="text-gray-500 text-sm md:text-base font-semibold max-w-2xl mx-auto">
             because your CMS is slowing you down and holding you back.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function ProblemSection() {
 
           {/* Separator - Vertical on md/lg, Horizontal on smaller screens */}
           <div className="w-full h-px bg-gray-300 my-8 md:hidden"></div>
-          <div className="hidden md:block w-0.5 bg-gray-300 h-40 self-start mt-5 mx-5"></div>
+          <div className="hidden md:block w-0.5 bg-gray-300 h-48 lg:h-40 self-start mt-5 mx-5"></div>
 
           {/* Lack of Plugins */}
           <div className="flex-1 px-4 py-4">
@@ -52,7 +52,7 @@ export default function ProblemSection() {
 
           {/* Separator - Vertical on md/lg, Horizontal on smaller screens */}
           <div className="w-full h-px bg-gray-300 my-8 md:hidden"></div>
-          <div className="hidden md:block w-0.5 bg-gray-300 h-40 self-start mt-5 mx-5"></div>
+          <div className="hidden md:block w-0.5 bg-gray-300 h-48 lg:h-40 self-start mt-5 mx-5"></div>
 
           {/* Lack of Community */}
           <div className="flex-1 px-4 py-4">
