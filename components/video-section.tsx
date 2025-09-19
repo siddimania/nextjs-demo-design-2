@@ -32,7 +32,7 @@ export default function VideoSection() {
 
   return (
     <section
-      id="video"
+      id="video-section"
       className="bg-brand-background-blue flex justify-center"
     >
       <div className="w-full max-w-[1400px] px-4 sm:px-4 md:px-6 lg:px-8">
@@ -50,7 +50,7 @@ export default function VideoSection() {
         {/* Company Logos Section */}
         <div className="pt-5 pb-15 md:pb-25">
           <div className="mx-auto max-w-7xl px-4 sm:px-4 md:px-6 lg:px-8">
-            <div className="grid grid-cols-2 items-center gap-4 md:gap-8 md:grid-cols-4 lg:grid-cols-8">
+            <div className="grid grid-cols-2 items-center gap-4 md:grid-cols-4 md:gap-8 lg:grid-cols-8">
               {companies.map((company, index) => {
                 return (
                   <div

@@ -11,12 +11,12 @@ import Image from "next/image";
 export default function FeaturesSection() {
   return (
     <section
-      id="features"
-      className="flex flex-col items-center justify-center gap-10 px-4 py-16 md:gap-20 md:px-6"
+      id="features-section"
+      className="flex flex-col items-center justify-center gap-10 px-4 py-4 sm:py-8 md:gap-20 md:px-6 lg:py-16"
     >
       <div className="flex w-full max-w-6xl flex-col items-center rounded-lg border">
         {/* Top Section */}
-        <div className="relative container mx-auto border-b bg-indigo-50 px-20 py-16 lg:py-24">
+        <div className="relative container mx-auto border-b bg-indigo-50 px-5 py-8 sm:px-10 md:py-16 lg:px-20 lg:py-24">
           <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
             {/* Content */}
             <div className="space-y-8 lg:w-1/2">
@@ -44,7 +44,7 @@ export default function FeaturesSection() {
           </div>
           {/* Image Placeholder */}
           {/* Image Side */}
-          <div className="absolute right-0 bottom-0">
+          <div className="absolute right-0 bottom-0 hidden lg:block">
             <Image
               src="/features/create_api.png"
               alt="alt"
@@ -55,7 +55,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Features Grid */}
-        <div className="container mx-auto px-10 py-10 md:px-20 lg:py-15">
+        <div className="container mx-auto px-5 py-10 sm:px-10 lg:px-20 lg:py-15">
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {/* Content Type Builder */}
             <div>
@@ -98,7 +98,7 @@ export default function FeaturesSection() {
 
       <div className="flex w-full max-w-6xl flex-col items-center rounded-lg border">
         {/* Top Section */}
-        <div className="relative container mx-auto border-b bg-indigo-50 px-6 py-16 md:px-12 lg:px-20 lg:py-24">
+        <div className="relative container mx-auto border-b bg-indigo-50 px-5 py-8 sm:px-10 md:py-16 lg:px-20 lg:py-24">
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-16">
             {/* Content */}
             <div className="space-y-8 lg:w-1/2">
@@ -125,7 +125,7 @@ export default function FeaturesSection() {
           </div>
           {/* Image Placeholder */}
           {/* Image Side */}
-          <div className="absolute right-0 bottom-0">
+          <div className="absolute right-0 bottom-0 hidden lg:block">
             <Image
               src="/features/customization.png"
               alt="alt"
@@ -136,7 +136,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Features Grid */}
-        <div className="container mx-auto px-10 py-10 md:px-20 lg:py-15">
+        <div className="container mx-auto px-5 py-10 sm:px-10 lg:px-20 lg:py-15">
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {/* Content Type Builder */}
             <div>
@@ -157,8 +157,8 @@ export default function FeaturesSection() {
                 Design System
               </h3>
               <p className="text-sm leading-relaxed font-medium text-gray-600">
-                Build plugins fast with a complete design system to create
-                a consistent experience for all users.
+                Build plugins fast with a complete design system to create a
+                consistent experience for all users.
               </p>
             </div>
 
@@ -169,8 +169,8 @@ export default function FeaturesSection() {
                 Developer Community
               </h3>
               <p className="text-sm leading-relaxed font-medium text-gray-600">
-                Tap into a vibrant community of thousands of developers. If
-                you need help with an edge case or a simple bug, our active
+                Tap into a vibrant community of thousands of developers. If you
+                need help with an edge case or a simple bug, our active
                 community is ready to support.
               </p>
             </div>

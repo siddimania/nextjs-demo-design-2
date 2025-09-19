@@ -42,24 +42,27 @@ const ReviewsSection = () => {
   ];
 
   return (
-    <section className="flex items-center justify-center bg-white px-4 py-15 md:px-6">
+    <section
+      id="review-section"
+      className="flex items-center justify-center bg-white px-4 pt-10 sm:pt-15 md:px-6"
+    >
       <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <div className="mb-16 text-center">
+        <div className="text-center">
           <div className="text-sm font-semibold tracking-wide text-purple-500 uppercase">
             REVIEWS
           </div>
-          <h2 className="text-brand-heading mt-5 text-4xl font-bold md:text-4xl">
+          <h2 className="text-brand-heading mt-5 text-3xl font-bold md:text-4xl">
             Developers love Strapi
           </h2>
         </div>
 
         {/* Reviews Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-8 sm:mt-16 md:grid-cols-2 lg:grid-cols-3">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="flex flex-col cursor-pointer rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg justify-between"
+              className="flex cursor-pointer flex-col justify-between rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
             >
               {/* Company Logo */}
               <div className="mb-6">
@@ -84,7 +87,7 @@ const ReviewsSection = () => {
               </div>
 
               {/* Review Text */}
-              <p className="mb-6 text-base leading-relaxed text-gray-600">
+              <p className="mb-6 text-sm leading-relaxed text-gray-600 sm:text-base">
                 {review.review}
               </p>
 

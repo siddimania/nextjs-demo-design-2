@@ -80,7 +80,7 @@ export default function Footer() {
   ];
 
   return (
-    <section className="bg-white px-4 pt-20 pb-15 md:px-6">
+    <footer className="bg-white px-4 pt-15 pb-10 sm:pt-20 md:px-6 md:pt-20 md:pb-15">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
           {/* Logo and Description */}
@@ -114,7 +114,7 @@ export default function Footer() {
           </div>
 
           {/* Footer Links */}
-          <div className="grid flex-1 grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <div className="grid flex-1 grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {footerSections.map((section, index) => (
               <div key={section.title}>
                 <h3 className="mb-4 text-sm font-normal text-gray-900 uppercase">
@@ -168,6 +168,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
